@@ -119,7 +119,6 @@
         //
 
         if (typeof options.locale === 'object') {
-
             if (typeof options.locale.direction === 'string')
                 this.locale.direction = options.locale.direction;
 
@@ -224,7 +223,6 @@
 
         if (typeof options.buttonClasses === 'object')
             this.buttonClasses = options.buttonClasses.join(' ');
-
 
         if (typeof options.minYear === 'number')
             this.minYear = options.minYear;
@@ -336,9 +334,8 @@
             this.container.find('.ranges').prepend(list);
         }
 
-        if (typeof cb === 'function') {
-            this.callback = cb;
-        }
+        if (typeof cb === 'function')  this.callback = cb;
+        
 
         if (this.autoApply) {
             this.container.addClass('auto-apply');

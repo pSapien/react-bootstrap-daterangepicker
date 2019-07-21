@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import $ from 'jquery';
 import getOptions from './get-options.js';
 import PropTypes from 'prop-types';
-import './daterangepicker/daterangepicker';
+import daterangepicker from './daterangepicker/date-range-picker';
 
 export class DateRangePicker extends Component {
   constructor(props) {
@@ -11,6 +11,7 @@ export class DateRangePicker extends Component {
     this.$picker = null;
     this.options = getOptions();
   }
+  
   componentDidMount() {
     // initialize
     this.$picker.daterangepicker(this.getOptionsFromProps());
