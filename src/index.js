@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import $ from 'jquery';
 import getOptions from './get-options.js';
 import PropTypes from 'prop-types';
-import 'bootstrap-daterangepicker';
+import './daterangepicker/daterangepicker';
 
 export class DateRangePicker extends Component {
   constructor(props) {
@@ -94,8 +94,8 @@ export class DateRangePicker extends Component {
 DateRangePicker.defaultProps = {
   containerClass: 'react-bootstrap-daterangepicker-container',
   containerStyles: {
-    display: 'inline-block'
-  }
+    display: 'inline-block',
+  },
 };
 
 DateRangePicker.propTypes = {
@@ -138,7 +138,7 @@ DateRangePicker.propTypes = {
   timePicker: PropTypes.bool,
   timePickerIncrement: PropTypes.number,
   timePicker24Hour: PropTypes.bool,
-  timePickerSeconds: PropTypes.bool
+  timePickerSeconds: PropTypes.bool,
 };
 
 export default DateRangePicker;
